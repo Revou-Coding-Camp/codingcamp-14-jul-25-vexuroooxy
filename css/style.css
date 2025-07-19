@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #fff;
+  color: #333;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links ul li a:hover,
+.navbar .nav-links ul li a.active {
+  color: #007bff;
+}
+
+/* Main Content Area */
+.content-area {
+  padding: 40px 0;
+}
+
+.hero-section {
+  text-align: left;
+  padding: 60px 0;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.placeholder-box {
+  height: 100%;
+  width: 100%;
+  padding-top: 50%;
+  background-image: url("/photo/hehe.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 1.5em;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* New Section Styling */
+.section-divider {
+  border-top: 1px solid #ddd; /* A subtle line between sections */
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff; /* White background for separation */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-logo {
+  width: 250px;
+  height: 250px;
+  background-image: url(/photo/profile-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #f0f0f0; /* Light grey for the circles */
+  border-radius: 50%;
+  margin: 0 auto 15px auto; /* Center the circle and add bottom margin */
+  border: 1px solid #ddd; /* Subtle border for the circles */
+}
+
+.profile-logo p {
+  color: #fff;
+}
+
+.section-content {
+  padding: 40px 0;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-content h2,
+.section-divider h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/* Facilitation Section */
+.hobbies-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+.hobbies-cards .card {
+  text-align: center;
+  flex: 1; /* Allows cards to grow and shrink */
+  min-width: 200px; /* Minimum width for cards before wrapping */
+  max-width: 280px; /* Maximum width for larger screens */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hobbies-cards .card:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.hobbies-cards .circle-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0; /* Light grey for the circles */
+  border-radius: 50%;
+  margin: 0 auto 15px auto; /* Center the circle and add bottom margin */
+  border: 1px solid #ddd; /* Subtle border for the circles */
+}
+
+.hobbies-cards .card p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #444;
+}
+
+.playing-game-icon {
+  background-image: url(/photo/playing-game.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.coding-icon {
+  background-image: url(/photo/coding.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.swimming-icon {
+  background-image: url(/photo/swimming.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.message-me-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow form and output to wrap on smaller screens */
+  justify-content: center; /* Center items when wrapped */
+}
+
+.message-form {
+  flex: 2; /* Form takes more space */
+  min-width: 300px; /* Minimum width for the form */
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+  transform: scale(1.2);
+}
+
+.message-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background-color: #0056b3;
+}
+
+.submission-output {
+  flex: 1;
+  min-width: 280px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.submission-output h3 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.submission-output p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.submission-output p span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+  }
+
+  .navbar .nav-links ul {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 5px 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-section p {
+    font-size: 1em;
+  }
+
+  .facilitation-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facilitation-cards .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .message-me-container {
+    flex-direction: column;
+  }
+
+  .message-form,
+  .submission-output {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .section-content h2,
+  .section-divider h2 {
+    font-size: 1.8em;
+  }
+}

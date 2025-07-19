@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <!-- CSS External -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts Google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Content -->
+
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="/photo/profile-photo.jpg" alt="Logo" />
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#message-us-section">Message Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <main class="content-area">
+      <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+          <h1 id="welcomeMessage">Hi, Welcome To My Website!</h1>
+          <p>
+            This is the first practice in making a website with using HTML, CSS,
+            and JavaScript.
+          </p>
+          <div class="placeholder-box"></div>
+        </section>
+
+        <!-- Profile Section -->
+
+        <section id="profile" class="section-divider">
+          <h2>Profile</h2>
+          <div class="profile-logo"></div>
+
+          <p>
+            Fresh graduate in Electrical Engineering with strong interest and
+            foundational skills in electronics, system installation, and
+            troubleshooting. During my vocational education, I gained hands-on
+            experience in repairing electronic devices, reading technical
+            drawings, and working with various electrical components.
+          </p>
+          <br />
+          <p>Name : Valdiaz Gahari</p>
+        </section>
+
+        <!-- Skill Section -->
+
+        <section id="hobbies" class="section-content">
+          <h2>Hobbies</h2>
+          <div class="hobbies-cards">
+            <div class="card">
+              <div class="circle-icon playing-game-icon"></div>
+              <p>Playing Game</p>
+            </div>
+            <div class="card">
+              <div class="circle-icon coding-icon"></div>
+              <p>Coding</p>
+            </div>
+            <div class="card">
+              <div class="circle-icon swimming-icon"></div>
+              <p>Swimming</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Message Me Section -->
+
+        <section id="message-us-section" class="section-content">
+          <h2>Message Me</h2>
+          <div class="message-me-container">
+            <form id="message-form" class="message-form">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama" />
+              </div>
+              <div class="form-group">
+                <label for="birth-date">Tanggal Lahir</label>
+                <input
+                  type="date"
+                  id="birth-date"
+                  name="birth_date"
+                  value="2024-07-18"
+                />
+              </div>
+              <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Laki-laki"
+                    checked
+                  />
+                  <label for="male">Laki-laki</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Perempuan"
+                  />
+                  <label for="female">Perempuan</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Pesan"
+                ></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+
+            <!-- Ouput Message Section -->
+
+            <div class="submission-output">
+              <h3>Current time: <span id="current-time"></span></h3>
+              <div id="output-details">
+                <p>Nama: <span id="output-name"></span></p>
+                <p>Tanggal Lahir: <span id="output-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="output-gender"></span></p>
+                <p>Pesan: <span id="output-message"></span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer Content -->
+
+    <footer>
+      <div class="container">
+        <p>RevoU Mini Project | Created by Valdiaz</p>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript External -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
