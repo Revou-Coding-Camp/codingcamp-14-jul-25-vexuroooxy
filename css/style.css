@@ -87,7 +87,7 @@ body {
   height: 100%;
   width: 100%;
   padding-top: 50%;
-  background-image: url("images/hehe.jpg");
+  background-image: url("/images/hehe.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -113,7 +113,7 @@ body {
 .profile-logo {
   width: 250px;
   height: 250px;
-  background-image: url("images/profile-photo.jpg");
+  background-image: url("/images/profile-photo.jpg");
   background-position: center;
   background-size: cover;
   background-color: #f0f0f0; /* Light grey for the circles */
@@ -182,19 +182,19 @@ body {
 }
 
 .playing-game-icon {
-  background-image: url("ïmages/playing-game.jpeg");
+  background-image: url("/images/playing-game.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .coding-icon {
-  background-image: url("images/coding.jpg");
+  background-image: url("/images/coding.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .swimming-icon {
-  background-image: url("images/swimming.webp");
+  background-image: url("/images/swimming.webp");
   background-position: center;
   background-size: cover;
 }
