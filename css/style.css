@@ -83,10 +83,9 @@ body {
   margin-bottom: 40px;
 }
 
-.placeholder-box img {
+.placeholder-box {
   width: 100%;
   height: 100%;
-  padding-top: 50%;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -97,6 +96,11 @@ body {
   position: relative;
 }
 
+.placeholder-box img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
 /* New Section Styling */
 .section-divider {
   border-top: 1px solid #ddd; /* A subtle line between sections */
@@ -111,13 +115,19 @@ body {
 .profile-logo {
   width: 250px;
   height: 250px;
-  background-image: url("/images/profile-photo.jpg");
   background-position: center;
   background-size: cover;
   background-color: #f0f0f0; /* Light grey for the circles */
   border-radius: 50%;
   margin: 0 auto 15px auto; /* Center the circle and add bottom margin */
   border: 1px solid #ddd; /* Subtle border for the circles */
+}
+
+.profile-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-logo p {
@@ -179,24 +189,14 @@ body {
   color: #444;
 }
 
-.playing-game-icon {
-  background-image: url("/images/playing-game.jpeg");
+.circle-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
   background-position: center;
   background-size: cover;
 }
-
-.coding-icon {
-  background-image: url("/images/coding.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.swimming-icon {
-  background-image: url("/images/swimming.webp");
-  background-position: center;
-  background-size: cover;
-}
-
 .message-me-container {
   display: flex;
   gap: 30px;
