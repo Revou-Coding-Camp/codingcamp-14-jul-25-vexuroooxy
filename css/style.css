@@ -142,20 +142,19 @@ body {
   color: #333;
 }
 
-/* Facilitation Section */
 .hobbies-cards {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-  gap: 20px; /* Space between cards */
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 20px;
 }
 
 .hobbies-cards .card {
   text-align: center;
-  flex: 1; /* Allows cards to grow and shrink */
-  min-width: 200px; /* Minimum width for cards before wrapping */
-  max-width: 280px; /* Maximum width for larger screens */
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -164,16 +163,16 @@ body {
 }
 
 .hobbies-cards .card:hover {
-  transform: translateY(-5px); /* Subtle lift effect on hover */
+  transform: translateY(-5px);
 }
 
 .hobbies-cards .circle-icon {
   width: 100px;
   height: 100px;
-  background-color: #f0f0f0; /* Light grey for the circles */
+  background-color: #f0f0f0;
   border-radius: 50%;
-  margin: 0 auto 15px auto; /* Center the circle and add bottom margin */
-  border: 1px solid #ddd; /* Subtle border for the circles */
+  margin: 0 auto 15px auto;
+  border: 1px solid #ddd;
 }
 
 .hobbies-cards .card p {
@@ -204,13 +203,13 @@ body {
   display: flex;
   gap: 30px;
   padding: 20px;
-  flex-wrap: wrap; /* Allow form and output to wrap on smaller screens */
-  justify-content: center; /* Center items when wrapped */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .message-form {
-  flex: 2; /* Form takes more space */
-  min-width: 300px; /* Minimum width for the form */
+  flex: 2;
+  min-width: 300px;
   padding: 30px;
   background-color: #f9f9f9;
   border: 1px solid #eee;
@@ -237,7 +236,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
-  box-sizing: border-box; /* Include padding in element's total width/height */
+  box-sizing: border-box;
 }
 
 .form-group textarea {
